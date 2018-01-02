@@ -37,3 +37,13 @@ $(window).on('hashchange', function () {
     });
     $('html,body').scrollTop(0);
 });
+
+
+
+setTimeout(function () {                                   
+    $.getJSON("https://discordapp.com/api/guilds/397862893539950602/widget.json", function (data) {
+        $('#online').text(data.members[0].status);
+        $('#members').text(data.channels[0].name.slice(0,data.channels[0].name.length-1););
+        $('#guilds').text(data.channels[1].name.slice(0,data.channels[1].name.length-1););
+    });
+}, 100);
