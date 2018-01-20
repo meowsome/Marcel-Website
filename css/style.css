@@ -170,8 +170,12 @@ body {
     padding: 35px 50px;
 }
 
-.image {
+.image-150 {
     width: 150px;
+}
+
+.image-200 {
+    width: 200px;
 }
 
 .card:nth-child(1) {

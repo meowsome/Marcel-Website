@@ -15,7 +15,7 @@ Some scripts from outside sources were used in the making of this site. Credit t
 <head>
     <!-- Site Settings-->
     <title>Marcel</title>
-    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <link rel="shortcut icon" type="image/png" href="images/icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Marcel, Discord, Discord Bot, Minecraft, Weather, Cute, Leafeon">
     <meta name="description" content="Marcel is a simple, cute, and personable bot for your Discord server that adds both convenience and fun.">
@@ -55,6 +55,7 @@ Some scripts from outside sources were used in the making of this site. Credit t
         <div id="home" class="section wrapper-horizontal align-center">
             <div class="header-background background parallax"></div>
             <div class="wrapper-horizontal align-center">
+                <img class="image-200" src="images/icon.png" style="margin-bottom:15px;">
                 <h1 class="full text-center accent-color slidein-0s">Marcel</h1>
                 <p class="full text-center accent-color slidein-0-1s" style="padding:15px 25px 0px 25px;">Currently <b><span id="online">offline</span></b> and playing around with <b><span id="members">error</span></b> people in <b><span id="guilds">error</span></b> Discord servers</p>
                 <p class="full text-center accent-color slidein-0-1s" style="padding:15px 25px 25px 25px;">A simple, cute, and personable bot for your Discord server that adds both convenience and fun.</p>
@@ -73,7 +74,7 @@ Some scripts from outside sources were used in the making of this site. Credit t
             <div class="card w6">
                 <div class="card-content">
                     <h5>(^-^*)/</h5><br>
-                    <p>Hiya! Nice to meet ya, I'm Marcel. Here are some simple instructions for how to efficiently interact with me.<br><br>I work much like how you'd speak to a human in a normal conversation instead of just entering commands with a prefix and expecting an output.<br><br>Here are some examples of things you could say to me:<br><i>"Hey Marcel, how are you today?"</i><br><i>"Marcel, what's the weather in Denver, Colorado"</i><br><i>"Marcel, show me my avatar please"</i><br><i>"Marcel, show me the status of the Minecraft server mineplex.com"</i><br><br>All you have to do is send a message that contains my name and what you want me to do, and I'll try my best to do that for you!<br><br>Here is a list of my features so far:<br><br></p>
+                    <p>Hiya! Nice to meet ya, I'm Marcel. Here are some simple instructions for how to efficiently interact with me.<br><br>I work much like how you'd speak to a human in a normal conversation instead of just entering commands with a prefix and expecting an output.<br><br>Here are some examples of things you could say to me:<br><i>Hey Marcel, how are you today?</i><br><i>Marcel, let's see the weather in Denver, Colorado</i><br><i>Marcel, play <a href="https://www.youtube.com/watch?v=yq9HF7D9MRY" target="_blank">Surf by Hyper Potions</a></i><br><i>Marcel, show me the status of the Minecraft server <a href="http://mineplex.com" target="_blank">mineplex.com</a></i><br><br>All you have to do is send a message that contains my name and what you want me to do, and I'll try my best to do that for you!<br><br>Here is a list of my features so far:<br><br></p>
                     <table class="full">
                         <tr>
                             <td>Keywords</td>
@@ -123,6 +124,30 @@ Some scripts from outside sources were used in the making of this site. Credit t
                             <td>Minecraft</td>
                             <td>Shows you the status of any Minecraft server that you enter.</td>
                         </tr>
+                        <tr>
+                            <td>Play<br>Music</td>
+                            <td>Joins the voice channel that the user is in and plays the requested song. Can be either a search term or a YouTube URL</td>
+                        </tr>
+                        <tr>
+                            <td>Queue</td>
+                            <td>Displays a list of songs that are in the queue.</td>
+                        </tr>
+                        <tr>
+                            <td>Pause<br>Resume</td>
+                            <td>Either pauses or resumes the currently playing song.</td>
+                        </tr>
+                        <tr>
+                            <td>Skip</td>
+                            <td>Skips the current song and plays the next one, if there is one in the queue.</td>
+                        </tr>
+                        <tr>
+                            <td>Stop<br>Leave</td>
+                            <td>Stops playing the current song, deletes the queue, and leaves the voice channel.</td>
+                        </tr>
+                        <tr>
+                            <td>Nowplaying<br>NP</td>
+                            <td>Shows you the name of the song that is currently playing.</td>
+                        </tr>
                     </table>
                     <p><br>My creators plan to continuously update me in the future, so be sure to check back for more neat features!</p>
                 </div>
@@ -143,7 +168,7 @@ Some scripts from outside sources were used in the making of this site. Credit t
                     <div class="wrapper-horizontal">
                         <div class="w5">
                             <div style="padding:25px;" class="align-center text-center wrapper-vertical">
-                                <img class="image" src="images/meowsome.png">
+                                <img class="image-150" src="images/meowsome.png">
                                 <h4>meowsome</h4>
                                 <div class="wrapper-horizontal">
                                     <a target="_blank" href="https://meowsome.github.io"><i class="fa fa-link icon-url"></i></a>
@@ -156,7 +181,7 @@ Some scripts from outside sources were used in the making of this site. Credit t
 
                         <div class="w5">
                             <div style="padding:25px;" class="align-center text-center wrapper-vertical">
-                                <img class="image" src="images/bucketmuncher.png">
+                                <img class="image-150" src="images/bucketmuncher.png">
                                 <h4>BucketMuncher</h4>
                                 <div class="wrapper-horizontal">
                                     <a target="_blank" href="http://bucketmuncher.vulpix.pw"><i class="fa fa-link icon-url"></i></a>
@@ -183,6 +208,13 @@ Some scripts from outside sources were used in the making of this site. Credit t
                     <h5>◕‿◕✿</h5><br>
                     <p>Here's a list of new stuff I've learned in the past</p>
                     <ul>
+                        <li><b>1/18/18</b></li>
+                        <ul>
+                            <li>I now have the following YouTube music playback commands: Play, Queue, Pause, Resume, Skip, Stop, and Nowplaying. Try them out in your Discord server to see them work!</li>
+                            <li>I now handle errors better, so instead of just crashing if something goes wrong, I now don't crash and I tell you about it!</li>
+                            <li>I can now show you the temperature of any location in Celsius as well as Fahrenheit. My weather feedback now looks a bit different too!</li>
+                            <li>I've got a new icon, both on my website and on Discord. It was drawn by meowsome, the guy who owns me! Yes, I am a Leafeon!!! c:</li>
+                        </ul>
                         <li><b>1/4/18</b></li>
                         <ul>
                             <li>I can now show you the avatar for other people's Discord accounts too, as well as your own! Just simply tag the person and be sure to use the keyword.</li>
