@@ -51,10 +51,10 @@ setTimeout(function () {
         var data1 = parseInt(data.channels[0].name.slice(0, data.channels[0].name.length - 1));
         var data2 = parseInt(data.channels[1].name.slice(0, data.channels[1].name.length - 1));
         if (data1 > data2) {
-            $('#members').text(data1);
+            $('#channels').text(data1);
             $('#guilds').text(data2);
         } else {
-            $('#members').text(data2);
+            $('#channels').text(data2);
             $('#guilds').text(data1);
         }
     });
