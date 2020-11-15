@@ -7,7 +7,6 @@
 ------------------------------------------------------
 ----------------  meowsome.github.io  ----------------
 ------------------------------------------------------
-Some scripts from outside sources were used in the making of this site. Credit to those people who made them!
 -->
 
 <html>
@@ -21,7 +20,6 @@ Some scripts from outside sources were used in the making of this site. Credit t
     <meta name="description" content="Marcel is a simple, cute, and personable bot for your Discord server that adds both convenience and fun.">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <!-- Load External CSS-->
-    <link rel="stylesheet" href="css/ripple.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
 </head>
@@ -52,24 +50,19 @@ Some scripts from outside sources were used in the making of this site. Credit t
         </div>
     </div>
     <div class="body">
+        <div class="header-background background parallax"></div>
         <div id="home" class="section wrapper-horizontal align-center">
-            <div class="header-background background parallax"></div>
+            <div class="background parallax"></div>
             <div class="wrapper-horizontal align-center">
                 <img class="image-200" src="images/icon.png" style="margin-bottom:15px;">
                 <h1 class="full text-center accent-color slidein-0s">Marcel</h1>
-                <p class="full text-center accent-color slidein-0-1s" style="padding:15px 25px 0px 25px;">Currently <b><span id="online">offline</span></b> and playing around with <b><span id="members">error</span></b> people in <b><span id="guilds">error</span></b> Discord servers</p>
+                <p class="full text-center accent-color slidein-0-1s" style="padding:15px 25px 0px 25px;">Currently <b><span id="online">offline</span></b> and playing around with <b><span id="members">0</span></b> people in <b><span id="guilds">0</span></b> Discord servers</p>
                 <p class="full text-center accent-color slidein-0-1s" style="padding:15px 25px 25px 25px;">A simple, cute, and personable bot for your Discord server that adds both convenience and fun.</p>
-                <a href="https://discordapp.com/oauth2/authorize?client_id=389296067918692352&permissions=0&scope=bot" class="button ripple-dark accent slidein-0-1s">Invite Now&nbsp;&nbsp;<i class="fa fa-sign-in"></i></a>
+                <a href="invite" class="button ripple-dark accent slidein-0-1s">Invite Now&nbsp;&nbsp;<i class="fa fa-sign-in"></i></a>
                 <a href="#usage" class="button ripple-dark accent slidein-0-2s">Learn More&nbsp;&nbsp;<i class="fa fa-info-circle"></i></a>
-            </div>
-            <div class="footer wrapper-horizontal full align-center">
-                <div class="full align-right">
-                    <p class="faded"><i class="fa fa-copyright"></i> meowsome, All Rights Reserved.</p>
-                </div>
             </div>
         </div>
         <div id="usage" class="section wrapper-horizontal align-center">
-            <div class="header-background background parallax"></div>
             <h2 class="page-title accent-color">Usage</h2>
             <div class="card w6">
                 <div class="card-content">
@@ -81,7 +74,7 @@ Some scripts from outside sources were used in the making of this site. Credit t
                             <td>Description</td>
                         </tr>
                         <tr>
-                            <td>Help<br>Instructions<br>Use<br>About</td>
+                            <td>Help<br>Instructions<br>Commands</td>
                             <td>Displays a helpful summary of how to interact with the bot and what all the bot can do, which is basically the same as what is on this page.</td>
                         </tr>
                         <tr>
@@ -89,7 +82,7 @@ Some scripts from outside sources were used in the making of this site. Credit t
                             <td>Shows you who created/developed the bot.</td>
                         </tr>
                         <tr>
-                            <td>Changelog</td>
+                            <td>Changelog<br>Update<br>Updates</td>
                             <td>Shows you a list of recent things that were changed in the bot's code.</td>
                         </tr>
                         <tr>
@@ -101,7 +94,7 @@ Some scripts from outside sources were used in the making of this site. Credit t
                             <td>Shows you a picture of the tagged user's Discord profile picture, or your own if no name is supplied.</td>
                         </tr>
                         <tr>
-                            <td>Profile<br>Info<br>Information<br>User</td>
+                            <td>Profile<br>User</td>
                             <td>Shows you more information about the tagged user's Discord account, or your own if no name is supplied.</td>
                         </tr>
                         <tr>
@@ -133,16 +126,16 @@ Some scripts from outside sources were used in the making of this site. Credit t
                             <td>Displays a list of songs that are in the queue.</td>
                         </tr>
                         <tr>
-                            <td>Pause<br>Resume</td>
+                            <td>Pause<br>Resume<br>Play</td>
                             <td>Either pauses or resumes the currently playing song.</td>
                         </tr>
                         <tr>
                             <td>Skip</td>
-                            <td>Skips the current song and plays the next one, if there is one in the queue.</td>
+                            <td>Sends a vote to skip the current song and play the next one, if there is one in the queue. Only skips if the required amount of votes is met.</td>
                         </tr>
                         <tr>
-                            <td>Stop<br>Leave</td>
-                            <td>Stops playing the current song, deletes the queue, and leaves the voice channel.</td>
+                            <td>Stop<br>Leave<br>Clear</td>
+                            <td>Stops playing the current song, deletes the queue, and leaves the voice channel. Only works for users who have permission to mute other members in the voice channel I'm playing music in.</td>
                         </tr>
                         <tr>
                             <td>Nowplaying<br>NP</td>
@@ -150,20 +143,30 @@ Some scripts from outside sources were used in the making of this site. Credit t
                         </tr>
                         <tr>
                             <td>Wolfram<br>What<br>Who<br>Where<br>When<br>Why<br>How<br>Calculate<br>Add<br>Subtract<br>Multiply<br>Divide<br>Solve<br>Translate<br>Name<br>Define<br>Definition</td>
-                            <td>Answers any fact-based question that you have.</td>
+                            <td>Answers any fact-based question that you have using the Wolfram|Alpha site.</td>
+                        </tr>
+                        <tr>
+                            <td>News</td>
+                            <td>Shows you a list of the top 5 news stories that are currently trending. Updates often throughout the day!</td>
+                        </tr>
+                        <tr>
+                            <td>Dice</td>
+                            <td>Rolls a dice.</td>
+                        </tr>
+                        <tr>
+                            <td>Coin</td>
+                            <td>Flips a coin.</td>
+                        </tr>
+                        <tr>
+                            <td>(No command)</td>
+                            <td>If there is no command found, the bot will reply to your message with a random funny response.</td>
                         </tr>
                     </table>
                     <p><br>My creators plan to continuously update me in the future, so be sure to check back for more neat features!</p>
                 </div>
             </div>
-            <div class="footer wrapper-horizontal full align-center">
-                <div class="full align-right">
-                    <p class="faded-alt"><i class="fa fa-copyright"></i> meowsome, All Rights Reserved.</p>
-                </div>
-            </div>
         </div>
         <div id="about" class="section wrapper-horizontal align-center">
-            <div class="header-background background parallax"></div>
             <h2 class="page-title accent-color">About</h2>
             <div class="card w6">
                 <div class="card-content">
@@ -179,7 +182,7 @@ Some scripts from outside sources were used in the making of this site. Credit t
                                     <a target="_blank" href="https://t.me/leafeon"><i class="fa fa-telegram icon-url"></i></a>
                                     <a target="_blank" href="https://twitter.com/meowsom3"><i class="fa fa-twitter icon-url"></i></a>
                                 </div>
-                                <p>meowsome came up with the initial idea of the bot and created some of the code, as well as the website. He also takes care of the bot's maintenence.</p>
+                                <p>meowsome came up with the idea of the bot and wrote most of the code, as well as the website. He also takes care of the bot's maintenence.</p>
                             </div>
                         </div>
 
@@ -192,26 +195,112 @@ Some scripts from outside sources were used in the making of this site. Credit t
                                     <a target="_blank" href="https://t.me/bucketmuncher"><i class="fa fa-telegram icon-url"></i></a>
                                     <a target="_blank" href="https://twitter.com/bucketmuncher"><i class="fa fa-twitter icon-url"></i></a>
                                 </div>
-                                <p>BucketMuncher helped a lot with the coding aspect of the bot. He came up with a fix for everything that needed fixing, and he's just an cool guy overall.</p>
-                            </div>
+                                <p>BucketMuncher helped a lot with organizing the code for the bot. He came up with a fix for everything that needed fixing, and he's just an cool guy overall.</p>
+                            </div><br><br>
                         </div>
+                        <p><i>Oh and also, my avatar was drawn by <b>aquatically#4576</b></i></p>
                     </div>
-                </div>
-            </div>
-            <div class="footer wrapper-horizontal full align-center">
-                <div class="full align-right">
-                    <p class="faded-alt"><i class="fa fa-copyright"></i> meowsome, All Rights Reserved.</p>
                 </div>
             </div>
         </div>
         <div id="changelog" class="section wrapper-horizontal align-center">
-            <div class="header-background background parallax"></div>
             <h2 class="page-title accent-color">Changelog</h2>
             <div class="card w6">
                 <div class="card-content">
                     <h5>◕‿◕✿</h5><br>
                     <p>Here's a list of new stuff I've learned in the past</p>
                     <ul>
+                        <li><b>4/5/20</b></li>
+                        <ul>
+                            <li>I can play music again! My music functionality was disabled for a few months because of a bug, and my developer finally got around to fixing it.</li>
+                            <li>I am now running the latest versions of most of my dependencies.</li>
+                            <li>I have a couple of other internal changes as well.</li>
+                        </ul>
+                        <li><b>3/29/19</b></li>
+                        <ul>
+                            <li>My developer made a silly mistake and disabled the Wolfram command entirely with the last update, but it's back now.</li>
+                            <li>I no longer get confused in special cases with my Wolfram command where there were no results found.</li>
+                        </ul>
+                        <li><b>3/19/19</b></li>
+                        <ul>
+                            <li>I can now flip a coin!</li>
+                            <li>I can now understand your weather queries a bit better.</li>
+                            <li>I now (hopefully) no longer restart myself multiple times a day for no apparant reason!</li>
+                        </ul>
+                        <li><b>11/25/18</b></li>
+                        <ul>
+                            <li>I now display a properly formatted timestamp when I give you info about what song is playing! It was a bit messed up before, but now it looks much better.</li>
+                        </ul>
+                        <li><b>11/24/18</b></li>
+                        <ul>
+                            <li>I no longer get stuck when trying to send a message that's over the character limit enforced by Discord.</li>
+                        </ul>
+                        <li><b>10/28/18</b></li>
+                        <ul>
+                            <li>I no longer get confused and start spamming you with random messages when you say my name over and over again!</li>
+                        </ul>
+                        <li><b>10/15/18</b></li>
+                        <ul>
+                            <li>I can now roll a dice for you!</li>
+                            <li>My developer has removed the Cleverbot integration because the only free Cleverbot API out there on the web went dark mysteriously :c Now I only send you random responses instead of trying to reach out to this API. The only thing that you should notice is faster responses!</li>
+                        </ul>
+                        <li><b>8/14/18</b></li>
+                        <ul>
+                            <li>There was a bug that was causing my news command to fail and get stuck on that horrid yellow message! I don't want you waiting forever, and neither does my developer, so we hopefully fixed this!</li>
+                            <li>The same goes for a bug that caused most music commands' error messages to improperly execute when using them in DM. This bug was hopefully squashed!</li>
+                        </ul>
+                        <li><b>8/12/18</b></li>
+                        <ul>
+                            <li>My "News" command looks way better than it did before! There's also quite a bit more going on under the hood than there was before for this command. Be sure to check it out!</li>
+                            <li>My "Stop" command now has an alias of "Clear", and my "Changelog" command now has an aliases of "Update/Updates".</li>
+                            <li>My "Play" command now has some fancy magic that will, when a song is playing but has been paused, resume the song instead of playing a new one. However, if I detect additional input (such as a song name) alongside the "Play" command, then I'll go ahead and add that song to the queue instead of resuming the paused song. The "Resume" and "Pause" commands still act like normal. I do this just for convenience!</li>
+                            <li>I no longer get confused when both a Wolfram keyword and another keyword are detected. All other keywords have higher priority than the Wolfram keyword now.</li>
+                        </ul>
+                        <li><b>6/17/18</b></li>
+                        <ul>
+                            <li>My "stop"/"leave" command now only works for users who have permission to mute other members in the voice channel that I'm playing music in! It'll display an error otherwise. This is to prevent trolling.</li>
+                        </ul>
+                        <li><b>4/22/18</b></li>
+                        <ul>
+                            <li>After much frustration on my dev's part, I'm now updated to the latest version of Discord.js, v11.3.2. You won't notice anything different, but I sure will :3</li>
+                        </ul>
+                        <li><b>4/19/18</b></li>
+                        <ul>
+                            <li>Now instead of my skip command skipping the currently playing song, there's now a voting feature! You must receive enough votes from people in the voice channel to equal half of the amount of people in the voice channel in order to skip the song. You can't vote twice for a single song, and when you do vote, I'll send you a message confirming this and letting you know how many votes are left before the song is skipped, if there are any. This has been implimented to prevent abuse!</li>
+                        </ul>
+                        <li><b>4/15/18</b></li>
+                        <ul>
+                            <li>My silly developer was using a deprecated method of displaying my "Say my name and 'help' for help" line, so it failed to show up after a while. This has been fixed.</li>
+                            <li>Instead of just displaying a confusing and disappointing error message whenever the Cleverbot API fails, I now utilize a random sentence generator to confuse you even more!</li>
+                            <li>My loading feedback lines have grown in number and use! I now shuffle between multiple different "loading" lines, and the lines are used a bit more often than before.</li>
+                            <li>The news command looks and feels the same to you, but it's hopefully a bit cleaner under the hood now.</li>
+                        </ul>
+                        <li><b>3/22/18</b></li>
+                        <ul>
+                            <li>My weather command is now more advanced and more suited towards you! I can now show things like wind speed and humidity besides just temperatures, and I also give you a bit of my own thoughts of the weather too!</li>
+                        </ul>
+                        <li><b>3/15/18</b></li>
+                        <ul>
+                            <li>I've got some new error handling so that I don't get confused when I can't get a good connection to my external sources!</li>
+                        </ul>
+                        <li><b>3/3/18</b></li>
+                        <ul>
+                            <li>I've got a new icon, drawn by the awesome <b>aquatically#4377</b></li>
+                        </ul>
+                        <li><b>2/25/18</b></li>
+                        <ul>
+                            <li>Since the only free Cleverbot API out there seems to be offline a lot of the time, I got confused and broke... However, I now display an error message instead of just crashing, so you can still use me!</li>
+                            <li>I can now show you the latest trending news! Simply mention the word "news" in your message.</li>
+                        </ul>
+                        <li><b>2/3/18</b></li>
+                        <ul>
+                            <li>I now have Cleverbot integration! Every time that a user types something that I don't recognize as a command, I'll respond with something random.</li>
+                        </ul>
+                        <li><b>1/27/18</b></li>
+                        <ul>
+                            <li>Upon changing songs, I will now leave the voice channel if there is nobody else in it but myself. Why would I want to play music for nobody??</li>
+                            <li>My random error responses just got funnier!!</li>
+                        </ul>
                         <li><b>1/20/18</b></li>
                         <ul>
                             <li>I can now answer practically any fact question that you ask me, thanks to my new capabilities of accessing the Wolfram Alpha database! Go ahead, ask me any fact-based question!</li>
@@ -266,10 +355,28 @@ Some scripts from outside sources were used in the making of this site. Credit t
                     </ul>
                 </div>
             </div>
-            <div class="footer wrapper-horizontal full align-center">
-                <div class="full align-right">
-                    <p class="faded-alt"><i class="fa fa-copyright"></i> meowsome, All Rights Reserved.</p>
+        </div>
+        <div id="cleverbot_error" class="section wrapper-horizontal align-center">
+            <h2 class="page-title accent-color">Cleverbot Error</h2>
+            <div class="card w6">
+                <div class="card-content">
+                    <h5>〒﹏〒</h5><br>
+                    <p>If you're seeing this page, don't worry, you've done nothing wrong! If you were trying to look up a fact-based question, then this information won't really matter to you, because what happened was that there was no data found for your question, so I went ahead and moved on to create a legitimate-sounding and humorous reply to your message. However, it seems that that has failed as well. I utilize the <a href="https://cleverbot.io" target="_blank">Cleverbot.io API</a> in order to create legitimate replies to your messages that don't contain any of my <a href="#usage">keywords</a>. However, the API goes offline a lot of the time, so you may see this error message popping up every now and again. Basically, all it means is that the Cleverbot.io API is offline, and there's not much else anybody can really do about it. I would like to use a different API if possible, but my developers told me that this is the only one that's free ;-;</p>
                 </div>
+            </div>
+        </div>
+        <div id="wolfram_error" class="section wrapper-horizontal align-center">
+            <h2 class="page-title accent-color">Wolfram Error</h2>
+            <div class="card w6">
+                <div class="card-content">
+                    <h5>〒﹏〒</h5><br>
+                    <p>If you're seeing this page, then you most likely clicked the link in my error message after trying to use my Wolfram Alpha capabilities. I utilize the <a href="http://products.wolframalpha.com/api/" target="_blank">Wolfram Alpha API</a> to answer to fact-based questions. However, the API goes offline from time to time, so you may see this error message popping up every now and again. Basically, all it means is that the Wolfram Alpha API is offline, and there's not much else anybody can really do about it. Please try again in a bit!</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer wrapper-horizontal full align-center">
+            <div class="full">
+                <p class="faded-alt"><i class="fa fa-copyright"></i> meowsome, All Rights Reserved.</p>
             </div>
         </div>
     </div>
@@ -284,9 +391,6 @@ Some scripts from outside sources were used in the making of this site. Credit t
     <!-- Load External JS-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/ripple.js"></script>
-    <script type="text/javascript" src="js/click.js"></script>
-    <script type="text/javascript" src="js/parallax.js"></script>
 </body>
 
 </html>
